@@ -35,3 +35,13 @@ let resetScores = () => {
     teamAScoreValue.textContent = teamAScore;
     teamBScoreValue.textContent = teamBScore;
 }
+
+//change names
+
+function setTeamNamePrompt(team) {
+    const setName = `name${team}`
+    const setNameElement = document.getElementById(setName)
+    const setInput = prompt("Please enter team name")
+    setNameElement.textContent = setInput
+
+}

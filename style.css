@@ -164,6 +164,30 @@ team p {
   font-size: 1.3em;
 }
 
+.changeA button {
+  background-color: rgb(3, 112, 21);
+  color: aliceblue;
+  border: none;
+  outline: none;
+  padding: 0.3em 0.7em;
+  margin-right: 10px;
+  border-radius: 0.3em;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.changeB button {
+  background-color: rgb(3, 112, 21);
+  color: aliceblue;
+  border: none;
+  outline: none;
+  padding: 0.3em 0.7em;
+  margin-left: 10px;
+  border-radius: 0.3em;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
 @media (max-width: 768px) {
   .scoreboard {
     padding: 2em;
