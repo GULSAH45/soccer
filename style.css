@@ -123,11 +123,16 @@ body {
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
   box-sizing: border-box;
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
 }
 .team {
+  padding: 0.5em;
   text-align: center;
   background-color: #aceca167;
-  padding: 2em;
+
   border-radius: 0.5em;
 }
 button {
@@ -152,7 +157,7 @@ team p {
 .btn-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .team button {
   background-color: rgb(3, 112, 21);
@@ -163,7 +168,6 @@ team p {
   font-weight: 600;
   font-size: 1.3em;
 }
-
 .changeA button {
   background-color: rgb(3, 112, 21);
   color: aliceblue;
@@ -188,9 +192,33 @@ team p {
   font-size: 1.3em;
 }
 
+.setScoreA button {
+  background-color: rgb(3, 112, 21);
+  color: aliceblue;
+  border: none;
+  outline: none;
+  padding: 0.3em 0.5em;
+  margin-top: 10px;
+  margin-left: 90px;
+  border-radius: 0.3em;
+  font-weight: 600;
+}
+
+.setScoreB button {
+  background-color: rgb(3, 112, 21);
+  color: aliceblue;
+  border: none;
+  outline: none;
+  padding: 0.3em 0.5em;
+  margin-left: 90px;
+  margin-top: 10px;
+  border-radius: 0.3em;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .scoreboard {
-    padding: 2em;
+    padding: 2rem;
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -200,4 +228,16 @@ team p {
   .scoreboard {
     padding: 1em;
   }
+}
+@media (max-width: 500px) {
+  .scoreboard {
+    padding: 1em;
+  }
+
+  /* .setScoreB button {
+    margin-right: 110px;
+  }
+  .setScoreA button {
+    margin-left: -190px;
+  } */
 }

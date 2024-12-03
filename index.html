@@ -15,8 +15,13 @@
   </head>
 
   <body>
-    <div class="changeA">
-      <button onclick="setTeamNamePrompt('A')">Change Team Name</button>
+    <div class="A-buttons">
+      <div class="changeA">
+        <button onclick="setTeamNamePrompt('A')">Change Team Name</button>
+      </div>
+      <div class="setScoreA">
+        <button onclick="setTeamScorePrompt('A')">Set Score</button>
+      </div>
     </div>
 
     <div class="scoreboard">
@@ -54,9 +59,13 @@
       <div class="goal left"></div>
       <div class="goal right"></div>
     </div>
-
-    <div class="changeB">
-      <button onclick="setTeamNamePrompt('B')">Change Team Name</button>
+    <div class="B-buttons">
+      <div class="changeB">
+        <button onclick="setTeamNamePrompt('B')">Change Team Name</button>
+      </div>
+      <div class="setScoreB">
+        <button onclick="setTeamScorePrompt('B')">Set Score</button>
+      </div>
     </div>
 
     <script src="app.js"></script>
